@@ -4,5 +4,5 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
-  envDir: path.resolve(__dirname, "../../"),
+  envDir: path.resolve(import.meta.dirname, "../../"),
 });
